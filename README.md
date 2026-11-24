@@ -1,4 +1,4 @@
-# GLOSSÉ ✦ Luxury 3D Interactive Website
+# GLOSSÉ ✦ Luxury 3D Interactive Website - https://glosse-luxury.vercel.app
 
 An interactive 3D website built for **GLOSSÉ**, a high-end luxury lip gloss and cosmetic glaze brand. Built with a "wet-look, glassy, shimmery, glittery, dreamy" visual language combining Y2K glam with modern luxury aesthetics.
 
