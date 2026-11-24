@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>GLOSSÉ | Liquid Glass. Pure Radiance.</title>
+    <meta name="description" content="Ultra-reflective, peptide-infused luxury lip glaze with multi-dimensional starlight micro-pearls. Y2K glam meets high-end botanical alchemistry." />
+
+    <!-- Open Graph & Twitter -->
+    <meta property="og:title" content="GLOSSÉ — Luxury 3D Lip Glaze" />
+    <meta property="og:description" content="Liquid Glass. Pure Radiance. Discover 6 celestial high-shine lip glaze shades." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#FFD1DC" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <!-- Luxury Glitter Preloader Screen -->
+    <div id="glosse-preloader">
+      <div class="loader-sparkle-center">✦</div>
+      <h1 class="loader-brand">GLOSSÉ</h1>
+      <p class="loader-tagline">Liquid Glass • Pure Radiance</p>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar-progress"></div>
+      </div>
+    </div>
+
+    <!-- Dreamy Background Blurred Ambient Orbs -->
+    <div class="ambient-orbs-container" aria-hidden="true">
+      <div class="ambient-orb orb-1"></div>
+      <div class="ambient-orb orb-2"></div>
+      <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Persistent 3D Three.js WebGL Canvas -->
+    <div id="webgl-canvas-container" aria-label="Interactive 3D Lip Gloss Bottle Viewport"></div>
+
+    <!-- Main Content Viewport with 4 Interactive Sections -->
+    <main id="app-viewport">
+      <!-- 1. HOME HERO SECTION -->
+      <section id="page-home" class="page-section active-page" data-page="home">
+        <div class="section-container">
+          <div class="hero-layout">
+            <div class="hero-content">
+              <div class="hero-pill-badge">
+                <span>✦</span>
+                <span>The High-Glaze Collection 2026</span>
+              </div>
+
+              <h1 class="hero-headline">
+                Liquid Glass.<br />
+                <span class="italic">Pure Radiance.</span>
+              </h1>
+
+              <p class="hero-description">
+                Immerse your lips in an ultra-cushion vinyl glaze infused with botanical peptides and starlight micro-prisms. High-impact shine with zero stickiness.
+              </p>
+
+              <div class="hero-cta-group">
+                <a href="#shop" class="btn btn-primary magnetic" data-nav="shop">
+                  <span>Explore The 6 Shades</span>
+                  <span>✦</span>
+                </a>
+                <a href="#story" class="btn btn-secondary magnetic" data-nav="story">
+                  <span>The Formula</span>
+                </a>
+              </div>
+
+              <div class="hero-features-strip">
+                <div class="feature-pill">
+                  <span class="feature-dot"></span>
+                  <span class="feature-text">12-Hour Cushion Shield</span>
+                </div>
+                <div class="feature-pill">
+                  <span class="feature-dot"></span>
+                  <span class="feature-text">Diamond Micro-Refraction</span>
+                </div>
+                <div class="feature-pill">
+                  <span class="feature-dot"></span>
+                  <span class="feature-text">100% Clean & Vegan</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Shades Teaser Card -->
+            <div class="hero-shades-teaser magnetic">
+              <span class="teaser-label">Featured Tones</span>
+              <div class="teaser-dots">
+                <span class="mini-swatch active" style="background: #5C0C25;" title="Cabernet Glaze" data-shade="wine-starlight"></span>
+                <span class="mini-swatch" style="background: #E57599;" title="Rose Quartz" data-shade="rose-quartz"></span>
+                <span class="mini-swatch" style="background: #F28C68;" title="Peach Fizz" data-shade="peach-fizz"></span>
+                <span class="mini-swatch" style="background: #8A184A;" title="Berry Bloom" data-shade="berry-bloom"></span>
+                <span class="mini-swatch" style="background: #B185DB;" title="Lilac Dream" data-shade="lilac-dream"></span>
+                <span class="mini-swatch" style="background: #D4AF37;" title="Gold Rush" data-shade="gold-rush"></span>
+              </div>
+            </div>
+
+            <!-- Live Glaze Application Portal (Wand Unscrew & Lip Drip Showcase) -->
+            <div class="hero-glaze-card glass-panel magnetic" id="hero-glaze-card">
+              <div class="glaze-card-top">
+                <span class="glaze-live-tag">✦ LIVE APPLICATION</span>
+                <span class="glaze-shade-label">Shade: <strong>Cabernet Glaze</strong></span>
+              </div>
+              <div class="lip-portal-container">
+                <img src="/images/05_holographic_sparkle_pout.png" alt="High Shine Glitter Lips" class="lip-portal-image" id="portal-lip-img" />
+                <div class="lip-wet-shine-layer" id="lip-shine-layer"></div>
+                <div class="lip-ripple-wave" id="lip-ripple-wave"></div>
+                <div class="glaze-flare-flash" id="glaze-flare-flash"></div>
+              </div>
+              <div class="glaze-card-footer">
+                <p class="glaze-hint-text">Watch the 3D wand unscrew & drench lips in wine gloss</p>
+                <button class="btn btn-primary btn-sm btn-drop-glaze magnetic" id="btn-drop-glaze">
+                  <span>Unscrew & Glaze Lips</span>
+                  <span>💧</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. SHOP / SHADES SECTION -->
+      <section id="page-shop" class="page-section" data-page="shop">
+        <div class="section-container" id="shop-container">
+          <!-- Populated by ShadePicker component -->
+        </div>
+      </section>
+
+      <!-- 3. OUR STORY / INGREDIENTS SECTION -->
+      <section id="page-story" class="page-section" data-page="story">
+        <div class="section-container" id="story-container">
+          <!-- Populated by StoryCounters component -->
+        </div>
+      </section>
+
+      <!-- 4. CONTACT / LOOKBOOK SECTION -->
+      <section id="page-lookbook" class="page-section" data-page="lookbook">
+        <div class="section-container" id="lookbook-container">
+          <!-- Populated by ContactForm component -->
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
